@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Publish to GH-Pages
 
-Run `npm run publish` or `ng deploy --cname=ecmcoop.ca` to deploy the project to gh-pages for development. This will build the project on your local machine and push the output to the "gh-pages" branch.  The content of the gh-pages branch is served at [ecmcoop.ca](http://ecmcoop.ca).  Permission to contribute to the repository is required.
+Run `npm run publish` to deploy the project to gh-pages for development. This will build the project on your local machine and push the output to the "gh-pages" branch.  The content of the gh-pages branch is served at [ecmcoop.ca](http://ecmcoop.ca).  Permission to contribute to the repository is required.
 
 Please be aware that this command will not push your pending changes to master, so please sync with the master branch before publishing. Otherwise, your published changes could be out of date, and uncommitted changes will be replaced by others in the future.
 
