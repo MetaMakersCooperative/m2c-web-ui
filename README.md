@@ -1,6 +1,6 @@
 # Meta Makers Cooperative Website UI (Development)
 
-This is the User Interface for the Meta Makers Cooperative website.  The project uses [Angular](https://angular.io) version 9.0.2 and is deployed using GitHub Pages. Since only one site can be hosted per repository, this is the development repository and a separate repository is used for production.
+This is the User Interface for the Meta Makers Cooperative website.  The project uses [Angular](https://angular.io) version 9.0.2 and is deployed using [GitHub Pages](https://pages.github.com/). Since only one site can be hosted per repository, this is the development repository and a separate repository is used for production.
 
 ## Local Setup
 
