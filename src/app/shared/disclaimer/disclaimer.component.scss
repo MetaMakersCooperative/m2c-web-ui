@@ -1,0 +1,20 @@
+.disclaimer-banner {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.disclaimer-banner-theme {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 94, 0);
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,4 @@
+<div @dismissTrigger *ngIf="data && data.show" role="dialog" class="disclaimer-banner disclaimer-banner-theme">
+    <p>{{data.message}} <a *ngIf="data.linkAddress" [href]="data.linkAddress">{{data.linkText}}</a></p>
+    <button mat-raised-button (click)="dismiss()">{{data.dismiss}}</button>
+</div>
