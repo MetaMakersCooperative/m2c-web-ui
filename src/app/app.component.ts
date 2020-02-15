@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Disclaimer } from './shared/disclaimer/disclaimer.model';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,5 @@ export class AppComponent {
     linkText: "Go to https://metamakers.org",
     linkAddress: "https://metamakers.org"
   };
+  environment = environment;
 }

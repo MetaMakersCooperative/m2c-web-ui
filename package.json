@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "ng deploy --cname=ecmcoop.ca"
+    "publish-dev": "ng deploy --cname=ecmcoop.ca --configuration=development"
   },
   "private": true,
   "dependencies": {

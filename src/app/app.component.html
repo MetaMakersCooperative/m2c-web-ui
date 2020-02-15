@@ -1,1 +1,1 @@
-<app-disclaimer [data]="disclaimer"></app-disclaimer>
+<app-disclaimer *ngIf="!environment.production" [data]="disclaimer"></app-disclaimer>
