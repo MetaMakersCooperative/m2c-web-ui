@@ -1,0 +1,14 @@
+.help {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+
+    p {
+        margin-bottom: 0px;
+        padding-right: 20px;
+    }
+}

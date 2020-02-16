@@ -8,6 +8,7 @@ import { JoinComponent } from './sections/join/join.component';
 import { MatButtonModule } from '@angular/material/button';
 import { CategoriesComponent } from './sections/categories/categories.component';
 import { CategoryModule } from 'src/app/shared/category/category.module';
+import { HelpUsComponent } from './sections/help-us/help-us.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CategoryModule } from 'src/app/shared/category/category.module';
     HomeComponent,
     HeaderComponent,
     JoinComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    HelpUsComponent
   ],
   imports: [
     CommonModule,

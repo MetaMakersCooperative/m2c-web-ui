@@ -8,6 +8,7 @@ export interface HomeData {
     members: Dictionary<Member>;
     makes: Dictionary<Make>;
     facilities: Dictionary<Facility>;
+    helpUs: HelpUs;
 }
 
 export interface HeaderSection {
@@ -18,9 +19,25 @@ export interface HeaderSection {
     headline: string;
 }
 
+export interface HelpUs {
+    text: string;
+    needs: Need[];
+}
 export interface Image {
     url: string;
     caption: string;
+}
+
+export interface Need {
+    category: string;
+    overview: string;
+    wishlist: Tool[];
+}
+
+export interface Tool {
+    name: string;
+    description: string;
+    image: Image;
 }
 
 export interface Facility {
@@ -30,6 +47,7 @@ export interface Facility {
     image: Image;
     gallery: Image[];
     category: number;
+    tools: Tool[];
 }
 
 export interface Category {

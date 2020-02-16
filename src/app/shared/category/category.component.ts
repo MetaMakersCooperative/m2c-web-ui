@@ -13,4 +13,8 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getEventCount(): number{
+    return this.category.getUpcomingEvents().length;
+  }
+
 }

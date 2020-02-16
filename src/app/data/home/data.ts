@@ -213,7 +213,8 @@ export const fallbackHomeData: HomeData = {
                 url: "/assets/images/Facilities.jpg",
                 caption: "makerspace"
             }],
-            category: 1
+            category: 1,
+            tools: []
         },
         "2": {
             id: 2,
@@ -227,7 +228,25 @@ export const fallbackHomeData: HomeData = {
                 url: "/assets/images/Facilities.jpg",
                 caption: "makerspace"
             }],
-            category: 2
+            category: 2,
+            tools: []
         }
+    },
+    helpUs: {
+        text: "We hope to offer the following in the future.  Click below to learn more about how you can help us.",
+        needs: [
+            {
+                category: "metalworking",
+                overview: "we need tools and volunteers",
+                wishlist: [{
+                    name: "Horizontal bandsaw",
+                    description: "for cutting metal",
+                    image: {
+                        url: "/assets/images/Facilities.jpg",
+                        caption: "makerspace"
+                    }
+                }]
+            }
+        ]
     }
 };
