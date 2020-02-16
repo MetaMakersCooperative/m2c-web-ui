@@ -1,0 +1,10 @@
+<p *ngIf="selected">Viewing: {{selected.getCategory().name}}</p>
+
+<p>Other Facilities:</p>
+<div *ngIf="data" class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <div *ngFor="let facility of data" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+            <p (click)="setSelected(facility)">facility: {{facility.getCategory().name}}</p>
+        </div>
+    </div>
+</div>
