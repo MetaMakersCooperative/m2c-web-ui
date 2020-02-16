@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  disclaimer: {
+    show: true,
+    message: "This is a fake website for testing purposes.  The content on this page does not represent the views of Meta Makers Cooperative or its members.",
+    dismiss: "Got it!",
+    linkText: "Go to https://metamakers.org",
+    linkAddress: "https://metamakers.org"
+  }
 };
 
 /*
