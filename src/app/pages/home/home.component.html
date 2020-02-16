@@ -1,3 +1,3 @@
-<app-header [data]="(data | async).header"></app-header>
+<app-header [data]="(data | async)?.header"></app-header>
 <app-join></app-join>
-<app-categories></app-categories>
+<app-categories [data]="(data | async)?.getCategories()"></app-categories>

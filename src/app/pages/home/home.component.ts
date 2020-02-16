@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HomeData } from 'src/app/client/home/api.home.model';
 import { HomeService } from 'src/app/client/home/api.home.service';
 import { Observable } from 'rxjs';
-
+import { map } from 'rxjs/operators';
+import { LinkedHomeData } from './graph-builder/graph-builder.model';
+import { GraphBuilderService } from './graph-builder/graph-builder.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,11 +12,14 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
-  data: Observable<HomeData>;
-  constructor(private homeService: HomeService) { }
+  data: Observable<LinkedHomeData>;
+  constructor(private homeService: HomeService, private linker: GraphBuilderService) { }
 
   ngOnInit(): void {
-    this.data = this.homeService.getData();
+    var rawData$ = this.homeService.getData();
+    this.data = rawData$.pipe(map(x => {
+      return x == null ? null : this.linker.getGraph(x);
+    }))
   }
 
 }

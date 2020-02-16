@@ -2,12 +2,12 @@ import { Dictionary } from 'lodash';
 
 export interface HomeData {
     header: HeaderSection;
-    pastEvents?: Dictionary<Event>;
-    upcomingEvents?: Dictionary<Event>;
-    categories?: Dictionary<Category>;
-    members?: Dictionary<Member>;
-    makes?: Dictionary<Make>;
-    facilities?: Dictionary<Facility>;
+    pastEvents: Dictionary<Event>;
+    upcomingEvents: Dictionary<Event>;
+    categories: Dictionary<Category>;
+    members: Dictionary<Member>;
+    makes: Dictionary<Make>;
+    facilities: Dictionary<Facility>;
 }
 
 export interface HeaderSection {

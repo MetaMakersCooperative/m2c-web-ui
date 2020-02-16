@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DisclaimerModule } from './shared/disclaimer/disclaimer.module';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoryComponent } from './shared/category/category.component';
 
 @NgModule({
   declarations: [

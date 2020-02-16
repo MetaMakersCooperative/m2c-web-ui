@@ -9,14 +9,14 @@ import { Dictionary } from 'lodash';
 export class GraphBuilderService {
     
     getGraph(data: HomeData) : LinkedHomeData {
-        var pastEvents = new Dictionary<LinkedEvent>();
-        var upcomingEvents = new Dictionary<LinkedEvent>();
-        var categories = new Dictionary<LinkedCategory>();
-        var members= new Dictionary<LinkedMember>();
-        var makes = new Dictionary<LinkedMake>();
-        var facilities = new Dictionary<LinkedFacility>();
+        var pastEvents: Dictionary<LinkedEvent> = new Object();
+        var upcomingEvents: Dictionary<LinkedEvent> = new Object();
+        var categories: Dictionary<LinkedCategory> = new Object();
+        var members: Dictionary<LinkedMember> = new Object();
+        var makes: Dictionary<LinkedMake> = new Object();
+        var facilities: Dictionary<LinkedFacility> = new Object();
 
-        data.pastEvents.array.forEach((x:Event) => {
+        Object.values(data.pastEvents).forEach((x:Event) => {
             var i: LinkedEvent = {
                 ...x,
                 getSimilarUpcomingEvents: () => x.similarUpcomingEvents.map(y => upcomingEvents[y]),
@@ -26,7 +26,7 @@ export class GraphBuilderService {
             };
             pastEvents[x.id] = i; 
         });
-        data.upcomingEvents.array.forEach((x:Event) => {
+        Object.values(data.upcomingEvents).forEach((x:Event) => {
             var i: LinkedEvent = {
                 ...x,
                 getSimilarUpcomingEvents: () => x.similarUpcomingEvents.map(y => upcomingEvents[y]),
@@ -36,7 +36,7 @@ export class GraphBuilderService {
             };
             upcomingEvents[x.id] = i; 
         });
-        data.categories.array.forEach((x:Category) => {
+        Object.values(data.categories).forEach((x:Category) => {
             var i: LinkedCategory = {
                 ...x,
                 getUpcomingEvents: () => x.upcomingEvents.map(y => upcomingEvents[y]),
@@ -47,7 +47,7 @@ export class GraphBuilderService {
             };
             categories[x.id] = i; 
         });
-        data.members.array.forEach((x:Member) => {
+        Object.values(data.members).forEach((x:Member) => {
             var i: LinkedMember = {
                 ...x,
                 getCategories: () => x.categories.map(y => categories[y]),
@@ -59,7 +59,7 @@ export class GraphBuilderService {
             };
             members[x.id] = i; 
         });
-        data.makes.array.forEach((x:Make) => {
+        Object.values(data.makes).forEach((x:Make) => {
             var i: LinkedMake = {
                 ...x,
                 getCategory: () => categories[x.category],
@@ -68,7 +68,7 @@ export class GraphBuilderService {
             };
             makes[x.id] = i; 
         });
-        data.facilities.array.forEach((x:Facility) => {
+        Object.values(data.facilities).forEach((x:Facility) => {
             var i: LinkedFacility = {
                 ...x,
                 getCategory: () => categories[x.category]
@@ -78,13 +78,13 @@ export class GraphBuilderService {
 
         var result = {
             header: data.header,
-            getPastEvents: ()=> pastEvents.array,
-            getUpcomingEvents: ()=> upcomingEvents.array,
-            getCategories: ()=> categories.array,
-            getMembers: ()=> members.array,
-            getMakes: ()=> makes.array,
-            getFacilities: ()=> facilities.array,
-        }
+            getPastEvents: ()=> Object.values(pastEvents) as LinkedEvent[],
+            getUpcomingEvents: ()=> Object.values(upcomingEvents) as LinkedEvent[],
+            getCategories: ()=> Object.values(categories) as LinkedCategory[],
+            getMembers: ()=> Object.values(members) as LinkedMember[],
+            getMakes: ()=> Object.values(makes) as LinkedMake[],
+            getFacilities: ()=> Object.values(facilities) as LinkedFacility[],
+        };
 
         return result;
     }

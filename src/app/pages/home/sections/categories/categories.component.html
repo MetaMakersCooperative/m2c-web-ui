@@ -1,1 +1,7 @@
-<p>categories works!</p>
+<div *ngIf="data" class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <div *ngFor="let category of data" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+            <app-category [category]="category"></app-category>
+        </div>
+    </div>
+</div>
