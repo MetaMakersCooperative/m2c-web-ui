@@ -16,6 +16,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { MakesComponent } from './sections/makes/makes.component';
 import { MakeModule } from 'src/app/shared/make/make.module';
 import { FacilitiesComponent } from './sections/facilities/facilities.component';
+import { BenefitsComponent } from './sections/benefits/benefits.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FacilitiesComponent } from './sections/facilities/facilities.component'
     HelpUsComponent,
     EventsComponent,
     MakesComponent,
-    FacilitiesComponent
+    FacilitiesComponent,
+    BenefitsComponent
   ],
   imports: [
     CommonModule,
