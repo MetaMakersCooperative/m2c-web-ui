@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LinkedEvent } from '../../graph-builder/graph-builder.model';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 @Component({
   selector: 'app-events',
@@ -12,5 +13,7 @@ export class EventsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  calendarPlugins = [dayGridPlugin]; // important!
 
 }

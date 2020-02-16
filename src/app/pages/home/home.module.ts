@@ -12,6 +12,7 @@ import { HelpUsComponent } from './sections/help-us/help-us.component';
 import { EventsComponent } from './sections/events/events.component';
 import { EventModule } from 'src/app/shared/event/event.module';
 import { NeedModule } from 'src/app/shared/need/need.module';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { NeedModule } from 'src/app/shared/need/need.module';
     CategoryModule,
     EventModule,
     NeedModule,
+    FullCalendarModule,
     RouterModule.forChild(
       [
         { path: 'home', component: HomeComponent },

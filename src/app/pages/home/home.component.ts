@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { LinkedHomeData } from './graph-builder/graph-builder.model';
 import { GraphBuilderService } from './graph-builder/graph-builder.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
