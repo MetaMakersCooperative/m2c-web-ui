@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './sections/header/header.component';
 import { JoinComponent } from './sections/join/join.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CategoriesComponent } from './sections/categories/categories.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
     HomeComponent,
     HeaderComponent,
     JoinComponent,
+    CategoriesComponent,
   ],
   imports: [
     CommonModule,
