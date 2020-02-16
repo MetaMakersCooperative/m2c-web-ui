@@ -1,0 +1,7 @@
+<div *ngIf="data" class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <div *ngFor="let make of data" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+            <app-make [make]="make"></app-make>
+        </div>
+    </div>
+</div>

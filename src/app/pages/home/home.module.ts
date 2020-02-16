@@ -13,6 +13,8 @@ import { EventsComponent } from './sections/events/events.component';
 import { EventModule } from 'src/app/shared/event/event.module';
 import { NeedModule } from 'src/app/shared/need/need.module';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { MakesComponent } from './sections/makes/makes.component';
+import { MakeModule } from 'src/app/shared/make/make.module';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     JoinComponent,
     CategoriesComponent,
     HelpUsComponent,
-    EventsComponent
+    EventsComponent,
+    MakesComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +33,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     MatButtonModule,
     CategoryModule,
     EventModule,
+    MakeModule,
     NeedModule,
     FullCalendarModule,
     RouterModule.forChild(

@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './shared/category/category.component';
 import { NeedComponent } from './shared/need/need.component';
 import { EventComponent } from './shared/event/event.component';
+import { MakeComponent } from './shared/make/make.component';
 
 @NgModule({
   declarations: [
