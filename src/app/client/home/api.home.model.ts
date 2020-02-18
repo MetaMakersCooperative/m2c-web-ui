@@ -9,6 +9,7 @@ export interface HomeData {
     makes: Dictionary<Make>;
     facilities: Dictionary<Facility>;
     helpUs: HelpUs;
+    supporters: Supporters;
 }
 
 export interface HeaderSection {
@@ -17,6 +18,22 @@ export interface HeaderSection {
     name: string;
     motto: string;
     headline: string;
+}
+
+export interface Supporters {
+    name: string;
+    overview: string;
+    partners: Supporter[];
+    supporters: Supporter[];
+    people: string[];
+    howToHelp: string;
+    howToHelpTitle: string;
+}
+
+export interface Supporter {
+    name: string;
+    url: string;
+    image: Image;
 }
 
 export interface HelpUs {

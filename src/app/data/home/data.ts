@@ -248,5 +248,102 @@ export const fallbackHomeData: HomeData = {
                 }]
             }
         ]
+    },
+    supporters: {
+        name: "Our Supporters",
+        overview: "Special thanks to all of the businesses and people who have supported us:",
+        partners: [],
+        supporters: [{
+            name: "Sho Studios",
+            url: "https://shoartstudios.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/sho_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "Fusion Fiber Arts",
+            url: "https://www.facebook.com/Fusion-Fiber-Arts-264559844042799/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/fusion_fiber_arts_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "Bike Windsor",
+            url: "https://bikewindsoressex.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/bike_windsor_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "Stiemar Bakery",
+            url: "http://www.stiemar.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/stiemar_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "ReNu Kitchen",
+            url: "http://renukitchenwindsor.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/renu_kitchen_logo.gif",
+                caption: ""
+            }
+        },
+        {
+            name: "Levigator Press",
+            url: "http://levigatorpress.ca/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/levigator_press_logo.gif",
+                caption: ""
+            }
+        },
+        {
+            name: "D&R Vacuum",
+            url: "https://www.drvacuum.ca/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/d_and_r_logo.jpg",
+                caption: ""
+            }
+        },
+        {
+            name: "Guardian Glass",
+            url: "https://www.guardianglass.ca/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/guardian_glass_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "WE Tech Alliance",
+            url: "https://www.wetech-alliance.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/wetech_logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "Empire Communications",
+            url: "https://www.empire-team.com/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/empire-logo.png",
+                caption: ""
+            }
+        },
+        {
+            name: "Filaments.ca",
+            url: "https://filaments.ca/",
+            image: {
+                url: "https://metamakers.org/assets/images/logos/filaments-logo.png",
+                caption: ""
+            }
+        },
+    ],
+        people: ["Jodi", "Andy"],
+        howToHelpTitle: "How to Help",
+        howToHelp: "Here's how to help"
     }
 };

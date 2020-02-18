@@ -18,6 +18,7 @@ import { MakeModule } from 'src/app/shared/make/make.module';
 import { FacilitiesComponent } from './sections/facilities/facilities.component';
 import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AboutComponent } from './sections/about/about.component';
+import { SupportersComponent } from './sections/supporters/supporters.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AboutComponent } from './sections/about/about.component';
     MakesComponent,
     FacilitiesComponent,
     BenefitsComponent,
-    AboutComponent
+    AboutComponent,
+    SupportersComponent
   ],
   imports: [
     CommonModule,

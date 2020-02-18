@@ -1,4 +1,4 @@
-import { Image, HeaderSection, Need, HelpUs } from 'src/app/client/home/api.home.model';
+import { Image, HeaderSection, Need, HelpUs, Supporters } from 'src/app/client/home/api.home.model';
 
 
 export interface LinkedHomeData {
@@ -10,6 +10,7 @@ export interface LinkedHomeData {
     getMakes: ()=>LinkedMake[];
     getFacilities: ()=>LinkedFacility[];
     helpUs: HelpUs;
+    supporters: Supporters;
 }
 
 export interface LinkedFacility {

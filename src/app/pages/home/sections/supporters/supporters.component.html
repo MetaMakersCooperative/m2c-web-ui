@@ -1,0 +1,12 @@
+<section *ngIf="data">
+    <h2>{{data.name}}</h2>
+    <p>{{data.overview}}</p>
+    
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div *ngFor="let supporter of data.supporters" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
+                <a [href]="supporter.url"><img [src]="supporter.image.url" [alt]="supporter.image.caption"/></a>
+            </div>
+        </div>
+    </div>
+</section>
