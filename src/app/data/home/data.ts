@@ -16,6 +16,26 @@ export const fallbackHomeData: HomeData = {
         motto: "Explore. Collaborate. Make.",
         headline: "Meta Makers Cooperative (M2C) is a non-profit, member-run makerspace in Windsor, On where you can explore new interests, meet other makers, and have fun making things."
     },
+    prices: [
+        {
+            price: "$150.00",
+            discount: null,
+            fullPrice: null,
+            time: "3 months"
+        },
+        {
+            price: "$270.00",
+            discount: "10%",
+            fullPrice: "$300.00",
+            time: "6 months"
+        },
+        {
+            price: "$480.00",
+            discount: "20%",
+            fullPrice: "$600.00",
+            time: "12 months"
+        }
+    ],
     pastEvents: {
         "1": {
             id: 1,

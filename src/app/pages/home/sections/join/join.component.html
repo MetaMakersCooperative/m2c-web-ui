@@ -1,4 +1,12 @@
 <section class="join">
+    <div *ngIf="prices">
+        <h2>Prices</h2>
+        <ul *ngFor="let price of prices">
+    
+            <li><span *ngIf="price.discount" style="font-weight: bold;">Save {{price.discount}}</span><span *ngIf="price.fullPrice" style="text-decoration: line-through;"> {{price.fullPrice}}</span> {{price.price}} / {{price.time}}</li>
+        </ul>
+
+    </div>
     <h2>Become a member!</h2>
     <button mat-raised-button color="primary">Join</button>
 </section>

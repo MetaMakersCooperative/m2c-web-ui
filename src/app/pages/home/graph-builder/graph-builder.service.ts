@@ -85,7 +85,8 @@ export class GraphBuilderService {
             getMakes: ()=> Object.values(makes) as LinkedMake[],
             getFacilities: ()=> Object.values(facilities) as LinkedFacility[],
             helpUs: data.helpUs,
-            supporters: data.supporters
+            supporters: data.supporters,
+            prices: data.prices
         };
 
         return result;

@@ -2,6 +2,7 @@ import { Dictionary } from 'lodash';
 
 export interface HomeData {
     header: HeaderSection;
+    prices: PriceInfo[];
     pastEvents: Dictionary<Event>;
     upcomingEvents: Dictionary<Event>;
     categories: Dictionary<Category>;
@@ -10,6 +11,13 @@ export interface HomeData {
     facilities: Dictionary<Facility>;
     helpUs: HelpUs;
     supporters: Supporters;
+}
+
+export interface PriceInfo {
+    price: string;
+    fullPrice: string;
+    discount: string;
+    time: string;
 }
 
 export interface HeaderSection {

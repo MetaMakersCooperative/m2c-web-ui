@@ -1,5 +1,5 @@
 <app-header [data]="(data | async)?.header"></app-header>
-<app-join></app-join>
+<app-join [prices]="(data | async)?.prices"></app-join>
 <app-categories [data]="(data | async)?.getCategories()"></app-categories>
 <app-help-us [data]="(data | async)?.helpUs"></app-help-us>
 <app-events [data]="(data | async)?.getUpcomingEvents()"></app-events>
